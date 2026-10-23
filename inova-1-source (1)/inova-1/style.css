@@ -1,0 +1,20 @@
+*{box-sizing:border-box}body{margin:0;height:100vh;display:flex;flex-direction:column;overflow:hidden;font:14px 'Segoe UI',Arial,sans-serif;color:#e8edff;background:radial-gradient(ellipse at top right,#1e2b55,#0b1020 55%,#080b14)}
+header{height:62px;display:flex;align-items:center;justify-content:space-between;padding:0 22px;background:#0a0f1ee8;border-bottom:1px solid #27324b}
+.brand{display:flex;align-items:center;gap:10px;font-size:19px;font-weight:700}.brand b,em{color:#9daeff}.logo,.big-logo{display:grid;place-items:center;background:linear-gradient(145deg,#7c5cff,#35c9ff);color:white;font-weight:800}.logo{width:32px;height:32px;border-radius:10px}.tag{color:#8792ad;font-size:11px;letter-spacing:1.5px}
+main{margin:14px;display:flex;flex:1;min-height:0;flex-direction:column;border:1px solid #28344d;border-radius:15px;overflow:hidden;background:#0d1425;box-shadow:0 20px 65px #0005}
+.toolbar{display:flex;align-items:center;gap:7px;padding:10px 12px;background:#131c30;border-bottom:1px solid #28344d;min-height:58px}
+button{cursor:pointer;color:#d6def2;background:#1a263c;border:1px solid #34425f;border-radius:9px;padding:8px 12px}button:hover{background:#293958;border-color:#7188ff}
+.toolbar>button{min-width:35px;height:36px;font-size:22px;background:transparent;border-color:transparent}
+#address-form{display:flex;align-items:center;gap:8px;flex:1;min-width:0;padding:4px 7px 4px 12px;border:1px solid #33415e;border-radius:11px;background:#0b1221}
+input{background:transparent;border:0;outline:0;color:#edf2ff;font:inherit;min-width:0;width:100%;padding:8px}input::placeholder{color:#7e8aa5}
+.go{background:#647cff;border:0;color:white;font-weight:700}.tabs{display:flex;gap:5px;padding:5px 10px 0;background:#111a2b;border-bottom:1px solid #26334d;min-height:39px}
+.tab{width:180px;max-width:35%;display:flex;gap:8px;align-items:center;text-align:left;border-bottom-color:#111a2b;border-radius:9px 9px 0 0;font-size:12px}
+.tab.active{background:#263451;color:white}.tab-label{flex:1;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}.dot{width:7px;height:7px;border-radius:50%;background:#8295ff}.close{font-size:16px;color:#9ba8c3}
+#view-wrap{position:relative;flex:1;min-height:0;background:#0c1322}webview{position:absolute;inset:0;width:100%;height:100%;border:0;background:white}
+#welcome{height:100%;overflow:auto;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:25px;background:radial-gradient(ellipse at 50% 38%,#202e51,#111a2d 45%,#0c1322 80%)}
+.big-logo{width:64px;height:64px;border-radius:20px;font-size:34px;margin-bottom:12px}.eyebrow{font-size:11px;letter-spacing:2px;color:#91a5ff;font-weight:700}
+h1{font-size:clamp(25px,4vw,39px);margin:8px 0}em{font-style:normal}#welcome p:not(.eyebrow){color:#9ba8c3}
+#search-form{display:flex;width:min(600px,95%);gap:8px;padding:7px;border:1px solid #394968;border-radius:13px;background:#0b1221}
+.links{display:flex;gap:9px;flex-wrap:wrap;justify-content:center;margin-top:20px}.links button{padding:10px 15px}small{margin-top:24px;color:#7584a2}
+footer{display:flex;justify-content:space-between;padding:7px 12px;color:#74829e;background:#111a2b;border-top:1px solid #28344d;font-size:10px;letter-spacing:.5px}
+@media(max-width:600px){.tag{display:none}main{margin:6px}.toolbar{gap:3px;padding:7px}.toolbar>button{min-width:29px}.tab{width:140px}footer span:last-child{display:none}}
